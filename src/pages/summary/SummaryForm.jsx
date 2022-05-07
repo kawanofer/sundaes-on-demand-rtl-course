@@ -7,7 +7,6 @@ import OverlayTrigger from 'react-bootstrap/OverlayTrigger'
 export default function SummaryForm ({ setOrderPhase }) {
   const [tcChecked, setTcChecked] = useState(false)
 
-  console.log('SUMMARY FORM')
   function handleSubmit (event) {
     event.preventDefault()
 
