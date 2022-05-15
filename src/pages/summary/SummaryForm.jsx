@@ -35,21 +35,18 @@ export default function SummaryForm ({ setOrderPhase }) {
   )
 
   return (
-    <>
-      AAAAAA
-      <Form onSubmit={handleSubmit}>
-        <Form.Group controlId='terms-and-conditions'>
-          <Form.Check
-            type='checkbox'
-            checked={tcChecked}
-            onChange={(e) => setTcChecked(e.target.checked)}
-            label={checkboxLabel}
-          />
-        </Form.Group>
-        <Button variant='primary' type='submit' disabled={!tcChecked}>
-          Confirm order
-        </Button>
-      </Form>
-    </>
+    <Form onSubmit={handleSubmit}>
+      <Form.Group controlId='terms-and-conditions'>
+        <Form.Check
+          type='checkbox'
+          checked={tcChecked}
+          onChange={(e) => setTcChecked(e.target.checked)}
+          label={checkboxLabel}
+        />
+      </Form.Group>
+      <Button variant='primary' type='submit' disabled={!tcChecked}>
+        Confirm order
+      </Button>
+    </Form>
   )
 }
